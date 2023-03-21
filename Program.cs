@@ -17,8 +17,8 @@ namespace Day27AddressBookFileIO
             myAddressBook.PrintContacts();
 
 
-            string path = "C:\\c#practicle\\FileIODemo\\FileIODemo\\Addressbook.csv";
-
+            string path = "C:\\c#practicle\\FileIODemo\\FileIODemo\\demo1.json";
+            myAddressBook.WriteToJsonFile(path);
         }
     } 
 }
