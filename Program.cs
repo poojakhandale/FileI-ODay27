@@ -1,11 +1,24 @@
-﻿// See https://aka.ms/new-console-template for more informatinon
-namespace FileIODemo
+﻿using FileIODemo;
+
+namespace Day27AddressBookFileIO
 {
-class Program
-{
-    public static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Welcome to the Address Book File IO");
-    }
-}
+        public static void Main(string[] args)
+        {
+            AddressBook myAddressBook = new AddressBook();
+            Contacts newContact = new Contacts("Pooja", "khandale", "INDIA", "8369319177", "Pooja.p@example.com");
+            Contacts newContact2 = new Contacts("Ronit", "Das", "USA", "888222444", "ronit.das@jr.com");
+            //Contacts newContact3 = new Contacts("Ronit", "Das", "USA", "888222444", "ronit.das@jr.com");
+
+            myAddressBook.AddContact(newContact);
+            myAddressBook.AddContact(newContact2);
+
+            myAddressBook.PrintContacts();
+
+
+            string path = "C:\\c#practicle\\FileIODemo\\FileIODemo\\demo1.json";
+
+        }
+    } 
 }
